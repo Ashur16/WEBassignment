@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<MainPage>
+<HotelDetailPage>
 
-	<title> Hilton </title>
+	<title> Hilton </title>	
+
+	<hoteldetail>
+		<hotel id="1">
+			<name> Hilton </name>
+			<city> Sydney </city>
+			<country> Australia </country>
+			<contactnumber>02 9266 2000</contactnumber>
+			<email>sydney@hilton.com</email>			
+		</hotel>	
 	
+	</hoteldetail>
 
-<hoteldetail>
-	<hotel id="1">
-		<name> Hilton </name>
-		<city> Sydney </city>
-		<country> Australia </country>
-		<contactnumber>02 9266 2000</contactnumber>
-		<email>sydney@hilton.com</email>			
-	</hotel>
-	
-	
-</hoteldetail>
-
-
-</MainPage>
+</HotelDetailPage>
