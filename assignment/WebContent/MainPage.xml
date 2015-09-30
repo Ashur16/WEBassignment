@@ -2,23 +2,29 @@
 
 <MainPage>
 
-	<hotel>
+	<title> Hotel Reviews </title>
+	
+
+<hotellist>
+	<hotel id="1">
 		<name> Hilton </name>
 		<city> Sydney </city>
 		<country> Australia </country>			
 	</hotel>
 	
-	<hotel>
+	<hotel id="2">		
 		<name> Grand Hyatt	</name>
 		<city> Melbourne </city>
 		<country> Australia </country>			
 	</hotel>
 	
-	<hotel>
+	<hotel id="3">
 		<name>	Caesars Palace </name>
 		<city> Las Vegas </city>
 		<country> United States of America </country>			
 	</hotel>
+</hotellist>
+
 
 </MainPage>
 
