@@ -1,1 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<MainPage>
+
+	<hotel>
+		<name>	</name>
+		<city>  </city>
+		<country> </country>			
+	</hotel>
+	
+	<hotel>
+		<name>	</name>
+		<city>  </city>
+		<country> </country>			
+	</hotel>
+	
+	<hotel>
+		<name>	</name>
+		<city>  </city>
+		<country> </country>			
+	</hotel>
+
+</MainPage>
+
+	
+
+
+
+
+
