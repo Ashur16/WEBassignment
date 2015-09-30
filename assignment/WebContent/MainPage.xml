@@ -3,21 +3,21 @@
 <MainPage>
 
 	<hotel>
-		<name>	</name>
-		<city>  </city>
-		<country> </country>			
+		<name> Hilton </name>
+		<city> Sydney </city>
+		<country> Australia </country>			
 	</hotel>
 	
 	<hotel>
-		<name>	</name>
-		<city>  </city>
-		<country> </country>			
+		<name> Grand Hyatt	</name>
+		<city> Melbourne </city>
+		<country> Australia </country>			
 	</hotel>
 	
 	<hotel>
-		<name>	</name>
-		<city>  </city>
-		<country> </country>			
+		<name>	Caesars Palace </name>
+		<city> Las Vegas </city>
+		<country> United States of America </country>			
 	</hotel>
 
 </MainPage>
