@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<authors> 
+  <authorlist>
+  
+    <author id="1">
+      <name>John Smith</name>      
+    </author>
+ 
+    <author id="2">
+      <name>James Lee</name>
+    </author>
+ 
+    <author id="3">
+      <name>Jane Doe</name>
+    </author>
+ 
+    <author id="4">
+      <name>Jess Field</name>
+    </author>
+    
+  </authorlist>
+ 
+</authors>
