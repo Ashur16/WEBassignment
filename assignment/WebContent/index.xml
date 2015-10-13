@@ -1,32 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<MainPage>
-
+<site>
 	<title> Hotel Reviews </title>
-	
+	<hotels>
+		<hotel id="1">
+			<name>Hilton</name>
+			<city>Sydney</city>
+			<country>Australia</country>
+			<address>488 George St, Sydney NSW 2000</address>
+			<number>(02) 9266 2000</number>
+			<email>sydney@hilton.com</email>
+		</hotel>
 
-<hotellist>
-	<hotel id="1">
-		<name> Hilton </name>
-		<city> Sydney </city>
-		<country> Australia </country>			
-	</hotel>
-	
-	<hotel id="2">		
-		<name> Grand Hyatt	</name>
-		<city> Melbourne </city>
-		<country> Australia </country>			
-	</hotel>
-	
-	<hotel id="3">
-		<name>	Caesars Palace </name>
-		<city> Las Vegas </city>
-		<country> United States of America </country>			
-	</hotel>
-</hotellist>
+		<hotel id="2">
+			<name>Grand Hyatt</name>
+			<city>Melbourne</city>
+			<country>Australia</country>
+			<address>7 Hickson Rd, The Rocks NSW 2000</address>
+			<number>(02) 9256 1234</number>
+			<email>melbourne.grand@hyatt.com</email>
+		</hotel>
+
+		<hotel id="3">
+			<name>Caesars Palace</name>
+			<city>Las Vegas</city>
+			<country>USA</country>
+			<address>3570 S Las Vegas Blvd, Las Vegas, NV 89109, United States</address>
+			<number>+1 702-731-7110</number>
+			<email>concierge@caesarspalace.com</email>
+		</hotel>
+	</hotels>
 
 
-</MainPage>
+</site>
 
 	
 
