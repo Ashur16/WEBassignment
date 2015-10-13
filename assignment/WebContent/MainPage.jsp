@@ -6,3 +6,5 @@
 		<hotellink id="0"name="hilton" city="sydney" country="australia" />
     </hotellist> 
 </page>
+
+asddasdsa
