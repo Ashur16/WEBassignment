@@ -1,14 +1,22 @@
 package uts.wsd; 
 import java.util.*;
 import java.io.Serializable;
+
 import javax.xml.bind.annotation.*;
 
 
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlRootElement(name = "Authors")
+@XmlRootElement(name = "authors")
 public class Authors implements Serializable {
 	
+	public Authors() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	@XmlElement(name = "title")
+    private String title;
+
 	@XmlElement(name = "author")
     private ArrayList<Author> list = new ArrayList<Author>();
  
