@@ -1,10 +1,16 @@
 <%@ page language="java" contentType="text/xml; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%><?xml version="1.0" encoding="UTF-8"?>
+	pageEncoding="ISO-8859-1" import="uts.wsd.*"%><?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="page.xsl"?>
-<page title="Hotels"> 
+
+<% String filePath = application.getRealPath("WEB-INF/hotel.xml"); %>
+<jsp:useBean id="hotelApp" class="uts.wsd.HotelApplication" scope="application">
+    <jsp:setProperty name="hotelApp" property="filePath" value="<%=filePath%>"/>
+</jsp:useBean>
+
+<page title="<%= hotelApp.getHotels().getTitle() %> ">
 	<hotellist> 
-		<hotellink id="0" name="Hilton" city="Sydney" country="Australia" />
-   		<hotellink id="1" name="Grand Hyatt" city="Melbourne" country="Australia" />
-  		<hotellink id="2" name="Caesars Palace" city="Las Vegas" country="United States of America" />
-    </hotellist> 
+		<% for (Hotel hotel : hotelApp.getHotelist()) { %>
+			<hotellink id="<%= hotel.getId()%>" name="<%= hotel.getName()%>" city="<%= hotel.getCity()%>" country="<%= hotel.getCountry()%>" />
+   		<% } %>
+	</hotellist> 
 </page>

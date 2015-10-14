@@ -2,32 +2,44 @@ package uts.wsd;
  
 import java.util.*;
 import java.io.Serializable;
+
 import javax.xml.bind.annotation.*;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement(name = "site")
 public class Hotels implements Serializable {
-    @XmlElement(name = "title")
+	@XmlElement(name = "title")
     private String title;
-    @XmlElementWrapper(name = "hotel")
-    private ArrayList<Hotel> list = new ArrayList<Hotel>();
- 
+    @XmlElementWrapper(name = "hotels")
+    @XmlElement(name = "hotel")
+    private ArrayList<Hotel> hotels = new ArrayList<Hotel>();
+   
+    public Hotels() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+    public Hotels(String title) {
+		super();
+		this.title = title;
+	}
+    
     public String getTitle() {
 		return title;
 	}
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public void setList(ArrayList<Hotel> list) {
-		this.list = list;
+	public void setHotels(ArrayList<Hotel> list) {
+		this.hotels = list;
 	}
-	public ArrayList<Hotel> getList() {
-        return list;
+	public ArrayList<Hotel> getHotels() {
+        return hotels;
     }
-    public void addUser(Hotel user) {
-        list.add(user);
+    public void addHotel(Hotel hotel) {
+        hotels.add(hotel);
     }
-    public void removeUser(Hotel user) {
-        list.remove(user);
+    public void removeHotel(Hotel hotel) {
+        hotels.remove(hotel);
     }
+	
 }

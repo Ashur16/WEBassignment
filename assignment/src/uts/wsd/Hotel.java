@@ -5,9 +5,7 @@ import java.io.Serializable;
 import javax.xml.bind.annotation.*;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement
-
 public class Hotel implements Serializable {
-
 @XmlAttribute
 	private int id;
 @XmlElement
@@ -29,6 +27,12 @@ public class Hotel implements Serializable {
 		this.address = address;
 		this.number = number;
 		this.email = email;
+	}
+
+
+	public Hotel() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
 

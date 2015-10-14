@@ -3,7 +3,7 @@
 <site>
 	<title> Hotel Reviews </title>
 	<hotels>
-		<hotel id="1">
+		<hotel id="0">
 			<name>Hilton</name>
 			<city>Sydney</city>
 			<country>Australia</country>
@@ -12,7 +12,7 @@
 			<email>sydney@hilton.com</email>
 		</hotel>
 
-		<hotel id="2">
+		<hotel id="1">
 			<name>Grand Hyatt</name>
 			<city>Melbourne</city>
 			<country>Australia</country>
@@ -21,7 +21,7 @@
 			<email>melbourne.grand@hyatt.com</email>
 		</hotel>
 
-		<hotel id="3">
+		<hotel id="2">
 			<name>Caesars Palace</name>
 			<city>Las Vegas</city>
 			<country>USA</country>

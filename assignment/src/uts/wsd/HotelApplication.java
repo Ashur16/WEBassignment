@@ -10,7 +10,7 @@ import javax.xml.bind.*;
 
 public class HotelApplication implements Serializable {
 	private String filePath;
-	private Hotels hotels;
+	private Hotels hotels;   
 	public String getFilePath() {
 		return filePath;
 	}
@@ -33,13 +33,14 @@ public class HotelApplication implements Serializable {
 	}
 
 	
-	public List<Hotel> getHotelList() {
-		return hotels.getList();
+	
+	public List<Hotel> getHotelist() {
+		return hotels.getHotels();
 		
 	}
 	
-	public Hotel getHotel(int id){
-		for (Hotel hotel : getHotelList()) {
+	public Hotel getSingleHotel(int id){
+		for (Hotel hotel : getHotelist()) {
 			if (hotel.getId() == id)
 				return hotel;
 		}
