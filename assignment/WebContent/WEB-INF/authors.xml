@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<authors> 
-  <authorlist>
-  
-    <author id="1">
-      <name>John Smith</name>      
+<authors>  
+    <author>
+      <name>John Smith</name>
+      <email>john@gmail.com.au</email>
+      <password>john1234</password>      
     </author>
  
-    <author id="2">
+    <author>
       <name>James Lee</name>
+      <email>james@gmail.com.au</email>
+      <password>james1234</password>
     </author>
  
-    <author id="3">
+    <author>
       <name>Jane Doe</name>
+      <email>jane@gmail.com.au</email>
+      <password>jane1234</password>
     </author>
  
-    <author id="4">
+    <author>
       <name>Jess Field</name>
-    </author>
-    
-  </authorlist>
+      <email>jess@gmail.com.au</email>
+      <password>jess1234</password>
+    </author>  
  
 </authors>
