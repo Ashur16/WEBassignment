@@ -14,7 +14,6 @@ public class Hotel implements Serializable {
 	private String name;
 	private String city;
 	private String country;	
-
 	private String address;
 	private String number;
 	private String email;
