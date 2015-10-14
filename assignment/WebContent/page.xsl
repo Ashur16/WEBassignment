@@ -22,6 +22,20 @@
 			</body>
 		</html>
 	</xsl:template>
+	
+	<xsl:template match="navmenu">
+		<ul>
+			<xsl:apply-templates/>	
+		</ul>
+	</xsl:template>
+	
+	<xsl:template match="item">
+		<li> 
+			<a href="{@href}"> <xsl:value-of select="@title"/> </a>
+		</li>
+	</xsl:template>
+	
+	
 	<xsl:template match="hotellist">
 		<table>
 			<thead>
@@ -53,7 +67,8 @@
 				<td> <!-- right side of page-->
 					<div>Address: <span class="address"> <xsl:value-of select="@address"/></span></div>
 					<div>Number: <span class="number"> <xsl:value-of select="@number"/></span></div>
-					<div>Email: <span class="email"> <xsl:value-of select="@email"/></span></div>							
+					<div>Email: <span class="email"> <xsl:value-of select="@email"/></span></div>		
+					<div>Reviews: <span class="review"> <xsl:value-of select="@review"/></span></div>						
 				</td>
 			</tr>
 		</table>

@@ -7,18 +7,19 @@
     <jsp:setProperty name="hotelApp" property="filePath" value="<%=filePath%>"/>
 </jsp:useBean>
 
+
+<% String filePathh = application.getRealPath("WEB-INF/review.xml"); %>
+<jsp:useBean id="reviewApp" class="uts.wsd.HotelApplication" scope="application">
+    <jsp:setProperty name="reviewApp" property="filePath" value="<%=filePathh%>"/>
+</jsp:useBean>
+
 <%
 	int id = Integer.parseInt(request.getParameter("id") );
 	Hotel hotel = hotelApp.getSingleHotel(id);
+	Hotel review = reviewApp.getSingleHotel(id);
 %>
 
 <page title="Hotel details for <%= hotel.getName()%>"> 
-
-	<navmenu>
-		<item title="home" href="index.jsp"/>
-		<item title="login" href="login.jsp"/>
-	</navmenu>
-	
 	<hoteldetail id="<%= hotel.getId()%>" name="<%= hotel.getName()%>" city="<%= hotel.getCity()%>" country="<%= hotel.getCountry()%>" address="<%= hotel.getAddress()%>" number="<%= hotel.getNumber()%>" email="<%= hotel.getEmail()%>">
 	</hoteldetail>
 </page>

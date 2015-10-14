@@ -8,6 +8,12 @@
 </jsp:useBean>
 
 <page title="<%= hotelApp.getHotels().getTitle() %> ">
+
+	<navmenu>
+		<item title="home" href="index.jsp"/>
+		<item title="login" href="login.jsp"/>
+	</navmenu>
+	
 	<hotellist> 
 		<% for (Hotel hotel : hotelApp.getHotelist()) { %>
 			<hotellink id="<%= hotel.getId()%>" name="<%= hotel.getName()%>" city="<%= hotel.getCity()%>" country="<%= hotel.getCountry()%>" />
