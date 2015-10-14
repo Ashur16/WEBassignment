@@ -8,15 +8,11 @@
 </jsp:useBean>
 
 
-<% String filePathh = application.getRealPath("WEB-INF/review.xml"); %>
-<jsp:useBean id="reviewApp" class="uts.wsd.HotelApplication" scope="application">
-    <jsp:setProperty name="reviewApp" property="filePath" value="<%=filePathh%>"/>
-</jsp:useBean>
+
 
 <%
 	int id = Integer.parseInt(request.getParameter("id") );
 	Hotel hotel = hotelApp.getSingleHotel(id);
-	Hotel review = reviewApp.getSingleHotel(id);
 %>
 
 <page title="Hotel details for <%= hotel.getName()%>"> 

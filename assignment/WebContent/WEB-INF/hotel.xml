@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <site>
-	<title> Hotel Reviews </title>
+	<title> Hotels </title>
 	<hotels>
 		<hotel id="0">
 			<name>Hilton</name>

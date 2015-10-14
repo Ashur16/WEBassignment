@@ -11,6 +11,7 @@
 
 	<navmenu>
 		<item title="home" href="index.jsp"/>
+		
 		<item title="login" href="login.jsp"/>
 	</navmenu>
 	

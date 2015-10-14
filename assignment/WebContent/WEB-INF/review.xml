@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<site>
+<reviewList>
 	<title> Hotel Reviews </title>
 	<reviews>
 		<review id="0">
-		
+			<name> Review 1</name>
 		</review>
 	</reviews>
 
 
-</site>
+</reviewList>

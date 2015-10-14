@@ -7,6 +7,7 @@
     <jsp:setProperty name="hotelApp" property="filePath" value="<%=filePath%>"/>
 </jsp:useBean>
 
+
 <%
 	int id = Integer.parseInt(request.getParameter("id") );
 	Hotel hotel = hotelApp.getSingleHotel(id);
@@ -20,5 +21,15 @@
 	</navmenu>
 	
 	<hoteldetail id="<%= hotel.getId()%>" name="<%= hotel.getName()%>" city="<%= hotel.getCity()%>" country="<%= hotel.getCountry()%>" address="<%= hotel.getAddress()%>" number="<%= hotel.getNumber()%>" email="<%= hotel.getEmail()%>">
+	
 	</hoteldetail>
+	
+		<reviews>
+	<review id="0" name="Review one" date="1/1/2015"/>
+		<review id="1" name="shit hotel" date="20/1/3015"/>
+		<review id="2" name="good hotel" date="5/1/2015"/>
+		</reviews>
+	
+
+	
 </page>

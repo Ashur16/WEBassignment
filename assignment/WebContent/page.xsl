@@ -54,6 +54,7 @@
 			<td><a href="hotel.jsp?id={@id}">view</a></td>
 		</tr>
 	</xsl:template>
+
 	<xsl:template match="hoteldetail">
 		<table>
 			<tr>
@@ -67,10 +68,27 @@
 				<td> <!-- right side of page-->
 					<div>Address: <span class="address"> <xsl:value-of select="@address"/></span></div>
 					<div>Number: <span class="number"> <xsl:value-of select="@number"/></span></div>
-					<div>Email: <span class="email"> <xsl:value-of select="@email"/></span></div>		
-					<div>Reviews: <span class="review"> <xsl:value-of select="@review"/></span></div>						
+					<div>Email: <span class="email"> <xsl:value-of select="@email"/></span></div>
 				</td>
 			</tr>
 		</table>
+	
 	</xsl:template>
+	
+	<xsl:template match="reviews">
+	<h1>Reviews:</h1>
+					<xsl:apply-templates/>
+	
+	</xsl:template>
+	
+	<xsl:template match="review">
+	<td>
+		
+		<p><a href="review.jsp?id={@id}"><xsl:value-of select="@name"/></a> - <xsl:value-of select="@date"/></p>
+	</td>
+	</xsl:template>
+	
+
+	
+	
 </xsl:stylesheet>
