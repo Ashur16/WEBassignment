@@ -26,7 +26,14 @@ if (loginApp.getAuthors().login(email, password) != null) {
 session.setAttribute("author", loginApp.getAuthors().login(email, password));
 %>
 
-Login successful. Click <a href="index.jsp">here </a> to return to the main page.
+
+
+Login Successful
+
+<% response.sendRedirect("index.jsp"); %>
+
+
+
 
 <%  } else { %>
 

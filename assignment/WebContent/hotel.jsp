@@ -15,10 +15,28 @@
 
 <page title="Hotel details for <%= hotel.getName()%>"> 
 
-	<navmenu>
-		<item title="home" href="index.jsp"/>
-		<item title="login" href="login.jsp"/>
-	</navmenu>
+<navmenu>
+		<item title="home" href="index.jsp"/>	
+		<item title="login" href="login.jsp"/>	
+		
+<%
+
+Author author = (Author)session.getAttribute("author");
+
+%>
+		
+<% if (author != null) { %>
+
+You are logged in as <%= author.getName() %> &lt;<%= author.getEmail() %>&gt;
+<item title="Logout" href="Logout.jsp"/>
+
+<%  } else { %>
+
+You are not logged in
+
+<%	} %>		
+		
+</navmenu>
 	
 	<hoteldetail id="<%= hotel.getId()%>" name="<%= hotel.getName()%>" city="<%= hotel.getCity()%>" country="<%= hotel.getCountry()%>" address="<%= hotel.getAddress()%>" number="<%= hotel.getNumber()%>" email="<%= hotel.getEmail()%>">
 	

@@ -10,7 +10,8 @@
 <page title="<%= hotelApp.getHotels().getTitle() %> ">
 
 	<navmenu>
-		<item title="home" href="index.jsp"/>		
+		<item title="home" href="index.jsp"/>	
+		<item title="login" href="login.jsp"/>	
 		
 <%
 
@@ -21,14 +22,13 @@ Author author = (Author)session.getAttribute("author");
 <% if (author != null) { %>
 
 You are logged in as <%= author.getName() %> &lt;<%= author.getEmail() %>&gt;
-
+<item title="Logout" href="Logout.jsp"/>
 <%  } else { %>
 
 You are not logged in
 
 <%	} %>
 		
-		<item title="login" href="login.jsp"/>
 	</navmenu>
 	
 	<hotellist> 
