@@ -35,9 +35,6 @@ public class LoginApp {
 		return authors;
 		
 	}
-	public void getAuthors(Authors authors) {
-		this.authors = authors;
-	}
 	public void setAuthors(Authors authors) {
 		this.authors = authors;
 	}
