@@ -13,5 +13,8 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/Users/Joel Fernandez/Downloads/jstl-1.2-sources.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

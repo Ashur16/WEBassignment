@@ -14,9 +14,7 @@
 		<item title="login" href="login.jsp"/>	
 		
 <%
-
 Author author = (Author)session.getAttribute("author");
-
 %>
 		
 <% if (author != null) { %>

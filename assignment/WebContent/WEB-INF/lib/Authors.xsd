@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	
+	<!-- Type declarations -->
+	<xs:simpleType name="email">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[a-zA-Z0-9\._]+@[a-z-]+(\.[a-z-]+)+" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- Element declarations -->
+	<xs:element name="authors">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="authors" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="name" type="xs:string" />
+							<xs:element name="email" type="email" />
+							<xs:element name="password" type="xs:string" />							
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="friend" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="id" type="email" />
+													<xs:element name="status" type="xs:string" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+

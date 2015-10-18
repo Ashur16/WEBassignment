@@ -33,10 +33,13 @@ public class LoginApp {
 	}
 	public Authors getAuthors() {
 		return authors;
+		
+	}
+	public void getAuthors(Authors authors) {
+		this.authors = authors;
 	}
 	public void setAuthors(Authors authors) {
 		this.authors = authors;
 	}
-
 
 }
