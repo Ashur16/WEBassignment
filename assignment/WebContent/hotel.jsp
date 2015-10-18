@@ -29,6 +29,8 @@ Author author = (Author)session.getAttribute("author");
 
 You are logged in as <%= author.getName() %> &lt;<%= author.getEmail() %>&gt;
 <item title="Logout" href="Logout.jsp"/>
+<item title="Post Article" href="PostArticle.jsp"/>
+
 
 <%  } else { %>
 
