@@ -24,9 +24,9 @@ public class ReviewArticles implements Serializable {
 	}
 	
 	// Return article by passing article id
-	public ReviewArticle getArticleByArticleId(String articleId) {
+	public ReviewArticle getArticleByArticleId(int id) {
 		for(ReviewArticle article : articleList) {
-			if(article.getArticleId().equals(articleId))
+			if(article.getId() == (id))
 				return article;
 		}
 		
@@ -49,31 +49,31 @@ public class ReviewArticles implements Serializable {
 	}
 	
 	// Return total number of author's article
-	public int getAuthorArticleLength(String authorId) {
+	public int getAuthorArticleLength(int authorId) {
 		int count = 0;
 		
 		for(ReviewArticle article : articleList) {
-			if(article.getAuthorId().equals(authorId))
+			if(article.getAuthorId() == (authorId))
 				count++;
 		}
 		return count;
 	}
 	
 	// Return article list that is particular author 
-	public ArrayList<ReviewArticle> getAuthorArticle(String authorId) {
+	public ArrayList<ReviewArticle> getAuthorArticle(int authorId) {
 		ArrayList<ReviewArticle> list = new ArrayList<ReviewArticle>();
 		
 		for(ReviewArticle articles : articleList) {
-			if(articles.getAuthorId().equals(authorId))
+			if(articles.getAuthorId() == authorId)
 				list.add(articles);
 		}
 		return list;
 	}
 	
 	// Check is match between authorId and articleId
-	public boolean isMatchAuthor(String authorId, String articleId) {
+	public boolean isMatchAuthor(int authorId, int id) {
 		for(ReviewArticle articles : articleList) {
-			if(articles.getAuthorId().equals(authorId) && articles.getArticleId().equals(articleId))
+			if(articles.getAuthorId() == authorId && articles.getId() == id)
 				return true;
 		}
 		return false;
