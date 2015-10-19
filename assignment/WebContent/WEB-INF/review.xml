@@ -4,7 +4,7 @@
 	<title> Hotel Reviews </title>
 	<articles>
 		<article id="0">
-			<authorid>1</authorid>
+			<authorId>1</authorId>
 			<headline>Test</headline>
 			<content>askdasd</content>
 			<visible>1</visible>		

@@ -10,7 +10,12 @@ import uts.wsd.Author;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement(name = "reviewList")
 public class ReviewArticles implements Serializable {
-	@XmlElement(name = "article")
+
+	@XmlElement(name = "title")
+    private String title;
+    @XmlElementWrapper(name = "articles")
+    @XmlElement(name = "article")
+ 
 	private ArrayList<ReviewArticle> articleList = new ArrayList<ReviewArticle>();
 	
 	// Constructor
