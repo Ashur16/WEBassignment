@@ -24,6 +24,17 @@ public class ReviewArticleApp {
 		return filePath;
 	}
 	
+	public ReviewArticleApp(String filePath, ReviewArticles articles) {
+		super();
+		this.filePath = filePath;
+		this.articles = articles;
+	}
+
+	public ReviewArticleApp() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	// Setting the file path
 	public void setFilePath(String filePath) throws JAXBException, IOException {
 		this.filePath = filePath;
