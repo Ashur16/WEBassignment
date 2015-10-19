@@ -48,7 +48,7 @@ public class ReviewArticleApp {
 		return articles;
 	}
 	// Get articles list by passing authorId
-	public ArrayList<ReviewArticle> getArticles(String authorId) {
+	public ArrayList<ReviewArticle> getArticles(int authorId) {
 		return articles.getAuthorArticle(authorId);
 	}
 	
@@ -58,16 +58,16 @@ public class ReviewArticleApp {
 	}
 	
 	// Return article by passing article id
-	public ReviewArticle getArticleByArticleId(String articleId) {
-		return articles.getArticleByArticleId(articleId);
+	public ReviewArticle getArticleByArticleId(int id) {
+		return articles.getArticleByArticleId(id);
 	}
 	
 	//Remove article by passing articleId
-	public void removeArticleById(String articleId) {
+	public void removeArticleById(int articleId) {
 		Iterator<ReviewArticle> iterator = articles.getList().iterator();
 		while(iterator.hasNext()) {
 			ReviewArticle article = iterator.next();
-			if(article.getArticleId().equals(articleId)) {
+			if(article.getId() == articleId) {
 				iterator.remove();
 				try {
 					writingXMLFile();
