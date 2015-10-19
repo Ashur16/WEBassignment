@@ -7,9 +7,7 @@
 			<authorid>1</authorid>
 			<headline>Test</headline>
 			<content>askdasd</content>
-			<visible>1</visible>			
-		</review>
-	</article>
-
-
+			<visible>1</visible>		
+		</article>
+	</articles>	
 </reviewList>
