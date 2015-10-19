@@ -23,10 +23,10 @@ Author author = (Author)session.getAttribute("author");
 	You are not logged in
 	 <% } else {
 		String authorId = author.getEmail();
-		ReviewArticle article = new ReviewArticle("5" + "6", "8", "test", "3", "hello", "yes");
+		ReviewArticle article = new ReviewArticle(1, 2, "test", "3", true);
 		reviewApp.addArticle(article);
 } %>		
 		
 	Article posted
 </body>
- </html>
+</html>

@@ -16,6 +16,11 @@ import uts.wsd.Author;
 import uts.wsd.Authors;
 
 public class ReviewArticleApp {
+	public ReviewArticleApp() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	private String filePath;
 	private ReviewArticles articles;
 	

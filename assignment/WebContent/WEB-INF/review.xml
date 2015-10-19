@@ -2,11 +2,14 @@
 
 <reviewList>
 	<title> Hotel Reviews </title>
-	<reviews>
-		<review id="0">
-			<name> Review 1</name>
+	<articles>
+		<article id="0">
+			<authorid>1</authorid>
+			<headline>Test</headline>
+			<content>askdasd</content>
+			<visible>1</visible>			
 		</review>
-	</reviews>
+	</article>
 
 
 </reviewList>

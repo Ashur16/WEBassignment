@@ -6,49 +6,41 @@ import javax.xml.bind.annotation.*;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 public class ReviewArticle implements Serializable{
-	@XmlElement(name = "articleId")
-	private String articleId;
-	@XmlElement(name = "authorid")
-	private String authorId;
+	@XmlAttribute(name = "id")
+	private int id;
+	@XmlElement(name = "authorId")
+	private int authorId;
 	@XmlElement(name = "headline")
 	private String headline;
-	@XmlElement(name = "publish_date")
-	private String publish_date;
 	@XmlElement(name = "content")
 	private String content;
 	@XmlElement(name = "visible")
-	private String visible;
-	
-	// Constructor
-	public ReviewArticle() {
-		super();
-	}
+	private boolean visible;	
+
 
 	// Constructor with data
-	public ReviewArticle(String articleId, String authorId, String headline,
-			String publish_date, String content, String visible) {
+	public ReviewArticle(int id, int authorId, String headline, String content, boolean visible) {
 		super();
-		this.articleId = articleId;
+		this.id = id;
 		this.authorId = authorId;
-		this.headline = headline;
-		this.publish_date = publish_date;
+		this.headline = headline;		
 		this.content = content;
 		this.visible = visible;
 	}
 
-	public String getArticleId() {
-		return articleId;
+	public int getId() {
+		return id;
 	}
 
-	public void setArticleId(String articleId) {
-		this.articleId = articleId;
+	public void setId(int id) {
+		this.id = id;
 	}
 
-	public String getAuthorId() {
+	public int getAuthorId() {
 		return authorId;
 	}
 
-	public void setAuthorId(String authorId) {
+	public void setAuthorId(int authorId) {
 		this.authorId = authorId;
 	}
 
@@ -56,16 +48,8 @@ public class ReviewArticle implements Serializable{
 		return headline;
 	}
 
-	public void setTitle(String title) {
+	public void setHeadline(String headline) {
 		this.headline = headline;
-	}
-
-	public String getPublish_date() {
-		return publish_date;
-	}
-
-	public void setPublish_date(String publish_date) {
-		this.publish_date = publish_date;
 	}
 
 	public String getContent() {
@@ -77,11 +61,11 @@ public class ReviewArticle implements Serializable{
 	}
 	
 	
-	public String getVisible() {
+	public boolean getVisible() {
 		return visible;
 	}
 
-	public void setVisible(String visible) {
+	public void setVisible(boolean visible) {
 		this.visible = visible;
 	}
 
@@ -91,13 +75,6 @@ public class ReviewArticle implements Serializable{
 			return content.substring(0, 59) + "...";
 		else
 			return content;
-	}
 	
-	// Check is this article displaying for friend
-	public boolean isShowForFriend(boolean isFriend) {
-		if(isFriend && visible.equals("friend"))
-			return true;
-		else
-			return false;
 	}
 }
