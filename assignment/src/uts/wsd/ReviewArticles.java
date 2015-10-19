@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.*;
 import uts.wsd.Author;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlRootElement(name = "blog_article")
+@XmlRootElement(name = "reviewList")
 public class ReviewArticles implements Serializable {
 	@XmlElement(name = "article")
 	private ArrayList<ReviewArticle> articleList = new ArrayList<ReviewArticle>();
