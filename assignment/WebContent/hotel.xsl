@@ -14,6 +14,9 @@
 					.country {
 						color: red;
 					}
+					.rating {
+						color: brown;
+					}
 				</style>
 			</head>
 			<body>
@@ -69,7 +72,6 @@
 					<div>Address: <span class="address"> <xsl:value-of select="@address"/></span></div>
 					<div>Number: <span class="number"> <xsl:value-of select="@number"/></span></div>
 					<div>Email: <span class="email"> <xsl:value-of select="@email"/></span></div>
-					<td><a href="review.jsp?id={@id}">view reviews</a></td>
 				</td>
 			</tr>
 		</table>
@@ -85,7 +87,7 @@
 	<xsl:template match="review">
 	<td>
 		
-		<p><a href="review.jsp?id={@id}"><xsl:value-of select="@name"/></a> - <xsl:value-of select="@date"/></p>
+		<p><a href="review.jsp?id={@id}"><xsl:value-of select="@name"/></a> - <xsl:value-of select="@date"/> - <b><span class="rating"> <xsl:value-of select="@rating"/>/5 Star rating </span></b></p>
 	</td>
 	</xsl:template>
 	

@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/xml; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1" import="uts.wsd.*"%><?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="page.xsl"?>
+<?xml-stylesheet type="text/xsl" href="hotel.xsl"?>
 
 <% String filePath = application.getRealPath("WEB-INF/hotel.xml"); %>
 <jsp:useBean id="hotelApp" class="uts.wsd.HotelApplication" scope="application">
