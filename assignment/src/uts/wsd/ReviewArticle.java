@@ -11,25 +11,29 @@ public class ReviewArticle implements Serializable{
 	private int id;
 	@XmlElement
 	private int authorId;
+	private int hotelId;
 	private String headline;
 	private String content;
 	private boolean visible;	
 
 	
-	// Constructor
-		public ReviewArticle() {
-			super();
-		}
-
 	// Constructor with data
-	public ReviewArticle(int id, int authorId, String headline, String content, boolean visible) {
+	public ReviewArticle(int id, int authorId, int hotelId, String headline, String content, boolean visible) {
 		super();
 		this.id = id;
 		this.authorId = authorId;
+		this.hotelId = hotelId;
 		this.headline = headline;		
 		this.content = content;
 		this.visible = visible;
 	}
+	
+
+	// Constructor
+		public ReviewArticle() {
+			
+		}
+
 
 	public int getId() {
 		return id;
@@ -46,8 +50,16 @@ public class ReviewArticle implements Serializable{
 	public void setAuthorId(int authorId) {
 		this.authorId = authorId;
 	}
+	
+	public int getHotelId() {
+		return hotelId;
+	}
 
-	public String getTitle() {
+	public void setHotelId(int hotelId) {
+		this.hotelId = hotelId;
+	}
+
+	public String getHeadline() {
 		return headline;
 	}
 

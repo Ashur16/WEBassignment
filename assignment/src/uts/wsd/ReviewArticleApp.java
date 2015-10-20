@@ -4,6 +4,7 @@ import java.io.BufferedWriter;
 import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -15,14 +16,13 @@ import javax.xml.bind.Unmarshaller;
 import uts.wsd.Author;
 import uts.wsd.Authors;
 
-public class ReviewArticleApp {
-	public ReviewArticleApp() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
+public class ReviewArticleApp implements Serializable{
 	private String filePath;
 	private ReviewArticles articles;
+	
+	
+	public ReviewArticleApp(){
+	}
 	
 	// Getting the file path
 	public String getFilePath() {
@@ -60,6 +60,15 @@ public class ReviewArticleApp {
 	// Return article by passing article id
 	public ReviewArticle getArticleByArticleId(int id) {
 		return articles.getArticleByArticleId(id);
+	}
+	
+	// Returns a article using the hotel id
+	public ReviewArticle getSingleArticle(int id){
+		for (ReviewArticle article : getAllArticles()) {
+			if (article.getHotelId() == id)
+				return article;
+		}
+		return null;
 	}
 	
 	//Remove article by passing articleId

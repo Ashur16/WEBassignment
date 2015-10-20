@@ -69,6 +69,7 @@
 					<div>Address: <span class="address"> <xsl:value-of select="@address"/></span></div>
 					<div>Number: <span class="number"> <xsl:value-of select="@number"/></span></div>
 					<div>Email: <span class="email"> <xsl:value-of select="@email"/></span></div>
+					<td><a href="review.jsp?id={@id}">view reviews</a></td>
 				</td>
 			</tr>
 		</table>

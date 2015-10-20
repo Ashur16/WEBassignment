@@ -10,7 +10,6 @@ import uts.wsd.Author;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement(name = "reviewList")
 public class ReviewArticles implements Serializable {
-
 	@XmlElement(name = "title")
     private String title;
     @XmlElementWrapper(name = "articles")
@@ -22,12 +21,33 @@ public class ReviewArticles implements Serializable {
 	public ReviewArticles() {
 		super();
 	}
+	
+	public ReviewArticles(String title) {
+		super();
+		this.title = title;
+	}
 
 	// Return the entire article list
 	public ArrayList<ReviewArticle> getList() {
 		return articleList;
 	}
 	
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public ArrayList<ReviewArticle> getArticleList() {
+		return articleList;
+	}
+
+	public void setArticleList(ArrayList<ReviewArticle> articleList) {
+		this.articleList = articleList;
+	}
+
 	// Return article by passing article id
 	public ReviewArticle getArticleByArticleId(int id) {
 		for(ReviewArticle article : articleList) {

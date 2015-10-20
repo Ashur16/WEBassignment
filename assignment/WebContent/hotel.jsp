@@ -8,9 +8,14 @@
 </jsp:useBean>
 
 
+
+
+
 <%
 	int id = Integer.parseInt(request.getParameter("id") );
 	Hotel hotel = hotelApp.getSingleHotel(id);
+	
+	
 %>
 
 <page title="Hotel details for <%= hotel.getName()%>"> 
@@ -45,7 +50,8 @@ You are not logged in
 	</hoteldetail>
 	
 		<reviews>
-	<review id="0" name="Review one" date="1/1/2015"/>
+
+	<review id="0" name="ok" date="1/1/2015"/>
 		<review id="1" name="shit hotel" date="20/1/3015"/>
 		<review id="2" name="good hotel" date="5/1/2015"/>
 		</reviews>

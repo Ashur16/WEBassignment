@@ -5,9 +5,24 @@
 	<articles>
 		<article id="0">
 			<authorId>1</authorId>
+			<hotelId>1</hotelId>
 			<headline>Test</headline>
 			<content>askdasd</content>
-			<visible>1</visible>		
+			<visible>1</visible>
 		</article>
-	</articles>	
+		<article id="1">
+			<authorId>1</authorId>
+			<hotelId>1</hotelId>
+			<headline>Test</headline>
+			<content>askdasd</content>
+			<visible>1</visible>
+		</article>
+		<article id="2">
+			<authorId>1</authorId>
+			<hotelId>1</hotelId>
+			<headline>Test</headline>
+			<content>askdasd</content>
+			<visible>1</visible>
+		</article>
+	</articles>
 </reviewList>

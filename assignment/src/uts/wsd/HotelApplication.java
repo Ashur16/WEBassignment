@@ -10,7 +10,8 @@ import javax.xml.bind.*;
 
 public class HotelApplication implements Serializable {
 	private String filePath;
-	private Hotels hotels;   
+	private Hotels hotels;  
+	
 	public String getFilePath() {
 		return filePath;
 	}

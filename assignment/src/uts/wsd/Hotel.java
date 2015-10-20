@@ -3,19 +3,20 @@ package uts.wsd;
 import java.io.Serializable;
 
 import javax.xml.bind.annotation.*;
+
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement
 public class Hotel implements Serializable {
-@XmlAttribute
+	@XmlAttribute
 	private int id;
-@XmlElement
+	@XmlElement
 	private String name;
 	private String city;
-	private String country;	
+	private String country;
 	private String address;
 	private String number;
 	private String email;
-	
+
 	// Constructor for creating the hotel object with multiple parameters
 	public Hotel(int id, String name, String city, String country,
 			String address, String number, String email) {
@@ -85,7 +86,7 @@ public class Hotel implements Serializable {
 		this.address = address;
 	}
 
-	// Returns the hotel objects number 
+	// Returns the hotel objects number
 	public String getNumber() {
 		return number;
 	}
@@ -104,6 +105,5 @@ public class Hotel implements Serializable {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
 
 }
