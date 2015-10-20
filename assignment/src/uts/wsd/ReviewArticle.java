@@ -5,18 +5,21 @@ import java.io.Serializable;
 import javax.xml.bind.annotation.*;
 
 @XmlAccessorType(XmlAccessType.FIELD)
+@XmlRootElement
 public class ReviewArticle implements Serializable{
-	@XmlAttribute(name = "id")
+	@XmlAttribute
 	private int id;
-	@XmlElement(name = "authorId")
+	@XmlElement
 	private int authorId;
-	@XmlElement(name = "headline")
 	private String headline;
-	@XmlElement(name = "content")
 	private String content;
-	@XmlElement(name = "visible")
 	private boolean visible;	
 
+	
+	// Constructor
+		public ReviewArticle() {
+			super();
+		}
 
 	// Constructor with data
 	public ReviewArticle(int id, int authorId, String headline, String content, boolean visible) {

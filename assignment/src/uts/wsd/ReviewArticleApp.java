@@ -43,7 +43,7 @@ public class ReviewArticleApp {
 		fin.close();	
 	}
 	
-	// Get blog articles
+	// Get review articles
 	public ReviewArticles getReviewArticles() {
 		return articles;
 	}

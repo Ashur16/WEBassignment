@@ -23,21 +23,32 @@ public class Hotels implements Serializable {
 		this.title = title;
 	}
     
+    // Return the title of the hotels object
     public String getTitle() {
 		return title;
 	}
+    
+    // Sets the title of the hotels object
 	public void setTitle(String title) {
 		this.title = title;
 	}
+
+	// Sets the hotel array list
 	public void setHotels(ArrayList<Hotel> list) {
 		this.hotels = list;
 	}
+	
+	// Returns the hotels array list
 	public ArrayList<Hotel> getHotels() {
         return hotels;
     }
+	
+	// Adds a hotel to the hotel array list
     public void addHotel(Hotel hotel) {
         hotels.add(hotel);
     }
+    
+    // Removes a hotel from the hotel array list
     public void removeHotel(Hotel hotel) {
         hotels.remove(hotel);
     }

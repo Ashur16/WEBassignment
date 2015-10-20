@@ -14,6 +14,7 @@ public class HotelApplication implements Serializable {
 	public String getFilePath() {
 		return filePath;
 	}
+	// // Sets the filepath and allows for unmarshalling from file
 	public void setFilePath(String filePath) throws JAXBException, IOException {
 		this.filePath = filePath;
 		// Create the unmarshaller
@@ -25,20 +26,23 @@ public class HotelApplication implements Serializable {
 		hotels = (Hotels)u.unmarshal(fin); // This loads the "shop" object
 		fin.close();
 	}
+	
+	// Returns the hotels object
 	public Hotels getHotels() {
 		return hotels;
 	}
+	
+	// Sets the hotels object
 	public void setHotels(Hotels hotels) {
 		this.hotels = hotels;
 	}
 
-	
-	
+	// Returns the hotels array list	
 	public List<Hotel> getHotelist() {
 		return hotels.getHotels();
 		
 	}
-	
+	// Returns a hotel using the id
 	public Hotel getSingleHotel(int id){
 		for (Hotel hotel : getHotelist()) {
 			if (hotel.getId() == id)

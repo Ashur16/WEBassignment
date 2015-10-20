@@ -51,18 +51,7 @@ public class ReviewArticles implements Serializable {
 	// Remove the particular article
 	public void removeArticle(ReviewArticle article) {
 		articleList.remove(article);
-	}
-	
-	// Return total number of author's article
-	public int getAuthorArticleLength(int authorId) {
-		int count = 0;
-		
-		for(ReviewArticle article : articleList) {
-			if(article.getAuthorId() == (authorId))
-				count++;
-		}
-		return count;
-	}
+	}	
 	
 	// Return article list that is particular author 
 	public ArrayList<ReviewArticle> getAuthorArticle(int authorId) {
@@ -73,14 +62,6 @@ public class ReviewArticles implements Serializable {
 				list.add(articles);
 		}
 		return list;
-	}
-	
-	// Check is match between authorId and articleId
-	public boolean isMatchAuthor(int authorId, int id) {
-		for(ReviewArticle articles : articleList) {
-			if(articles.getAuthorId() == authorId && articles.getId() == id)
-				return true;
-		}
-		return false;
-	}
+	}	
+
 }

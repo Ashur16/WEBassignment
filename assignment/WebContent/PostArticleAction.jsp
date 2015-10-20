@@ -22,7 +22,7 @@ Author author = (Author)session.getAttribute("author");
 <% if(author == null) { %>
 	You are not logged in
 	 <% } else {
-		String authorId = author.getEmail();
+		// String authorId = author.getEmail();
 		ReviewArticle article = new ReviewArticle(1, 2, "test", "3", true);
 		reviewApp.addArticle(article);
 } %>		

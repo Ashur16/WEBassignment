@@ -11,6 +11,7 @@ public class LoginApp {
 	private String filePath;
 	private Authors authors;	
 	
+	// Constructor that takes no parameters
 	public LoginApp() {
 		super();
 		
@@ -19,6 +20,8 @@ public class LoginApp {
 	public String getFilePath() {
 		return filePath;
 	}
+	
+	// Sets the filepath and allows for unmarshalling from file
 	public void setFilePath(String filePath) throws JAXBException, IOException {
 		this.filePath = filePath;
 		
@@ -28,13 +31,15 @@ public class LoginApp {
 		 
 		// Now unmarshal the object from the file
 		FileInputStream fin = new FileInputStream(filePath);
-		authors = (Authors)u.unmarshal(fin); // This loads the "shop" object
+		authors = (Authors)u.unmarshal(fin); 
 		fin.close();
 	}
+	// Returns list of authors
 	public Authors getAuthors() {
 		return authors;
 		
 	}
+	// Sets list of authors
 	public void setAuthors(Authors authors) {
 		this.authors = authors;
 	}
